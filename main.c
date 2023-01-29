@@ -9,11 +9,11 @@
 void Hilo_1(void)
 {
     GPIOB_AHB->DATA = (1<<0);
-    ADC0_In(Result);
+    ADC0_In1(Result);
     GPIOB_AHB->DATA = (0<<0);
 
     GPIOB_AHB->DATA = (1<<0);
-    ADC1_In(Result1);
+    ADC1_In2(Result1);
     GPIOB_AHB->DATA = (0<<0);
 } 
 

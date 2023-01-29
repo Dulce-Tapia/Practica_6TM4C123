@@ -47,6 +47,6 @@ extern void Timer0A_Handler(void)
 
 extern void Timer1A_Handler(void)
 {
-  TIMER1->ICR = 1<<0;// acknowledge TIMER0A timeout
+  TIMER1->ICR = 1<<1;// acknowledge TIMER0A timeout
   (*PeriodicTask1)();           
 }
